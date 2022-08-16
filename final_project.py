@@ -120,7 +120,7 @@ predictions = scaler.inverse_transform(test_predictions_scaled)
 # predictions = 10**predictions
 testing_set['NN_predictions'] = predictions
 
-fig, ax = plt.subplots(nrows=2, ncols=3)
+'''fig, ax = plt.subplots(nrows=2, ncols=3)
 ax1 = ax[0, 0]
 ax2 = ax[0, 1]
 ax3 = ax[0, 2]
@@ -137,7 +137,7 @@ ax6.plot(testing_set[['FCFF', 'TES_predictions']])
 
 
 fig.legend()
-fig.show()
+fig.show()'''
 
 # training_set["FCFF"].plot(c='red')
 testing_set['FCFF'].plot(legend=True, c='red')
